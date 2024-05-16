@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>Sharipova_Selbi_PW6_Grid</title> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<style> 
+@media only screen and (max-width: 900px) {
+    .right {
+     background: rgb(248, 119, 216);
+     font-size: 18px;
+    }
+nav{
+     font-size: 18px;
+    }
+.left{
+     font-size: 22px;
+    }
+.hide {
+       display: none;
+        }
+    }
+@media only screen and (max-width: 400px) {
+    .right {
+     background: rgb(248, 112, 169);
+     font-size: 16px;
+    }
+nav{
+     font-size: 16px;
+    }
+.left{
+     font-size: 18px;
+    }
+.hide {
+        display: none;
+        }
+    }   
+
+.news {
+        display: flex;
+        flex-wrap: wrap;
+        }
+        
+/* Style the news preview element */
+        .news-preview {
+         width: 20%;
+           
+         margin: 15px;
+         padding: 15px;
+            
+        }
+        
+/* Style the thumbnail image */
+        .news-thumbnail {
+         max-width: 120%;
+         height: auto;
+        }
+body{	
+    font-family: Georgia, 'Sitka Small', Times , serif;
+    padding: 20px;
+}
+
+.logo { 
+    float: left; 
+    margin-left: 20px; 
+    color: rgb(221, 21, 121); 
+    font-size: 90px; 
+} 
+.logo2 { 
+    float: left; 
+    color: rgb(255, 135, 209); 
+    font-size: 45px; 
+} 
+header { 
+    background-color: white; 
+    padding-bottom: 110px;  
+    padding-top: 12px; 
+} 
+nav { 
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 10px;
+    font-size: 19px;
+}        
+nav a { 
+    background-color: rgb(206, 33, 119); 
+    color: white; 
+    padding: 8px 28px; 
+    text-decoration: none; 
+} 
+.img { 
+    margin: 10px 20px; 
+    float: left; 
+    width: 40%;
+    min-width: 400px;
+}  
+
+
+.right { 
+    font-size: 19px; 
+    float: left; 
+    margin-right: 10px;
+    color: rgb(54, 56, 56);
+}
+.container { 
+    gap: 5px 5px; 
+    float: right; 
+    display: flex; 
+    flex-wrap: wrap; 
+    padding: 15px 25px; 
+}
+.left{
+  padding-left: 10px;
+  font-size: 28px;
+  color: rgb(28, 29, 29);
+}
+
+
+       
+</style> 
+</head> 
+<body> 
+
+<header> 
+    <div class="logo">PINK</div>
+    <div class="logo2">panther</div>    
+    <nav class="container"> 
+        <a href="#1">Home</a> 
+        <a href="#2">Services</a> 
+        <a href="#3">News</a> 
+        <a href="#4">About</a> 
+        <a href="#5">Contact</a> 
+    </nav> 
+</header> 
+
+
+    <section id="1"> 
+        <div class="right">  
+            <img class="img"   src="car1.jpg" alt="picture 1"> 
+            <h2>About Pink Panther</h2> 
+            <p>Pink cars have long been a subject of fascination in the automotive world, as they make a bold statement and stand out from the crowd. The color pink has been associated with femininity, sweetness, and playfulness, and in the context of cars, it represents a departure from the conventional and a celebration of individuality. Pink cars are often seen as symbols of confidence and self-expression, as those who choose to drive them are unafraid to break away from the norm and embrace a more vibrant and unconventional aesthetic.
+
+                One of the most famous pink cars in pop culture is the Pink Cadillac, famously associated with Elvis Presley. The King of Rock 'n' Roll was known for his flamboyant style and larger-than-life personality, and his custom pink Cadillac became an iconic symbol of his extravagance and showmanship. In recent years, pink cars have made a resurgence in popularity, especially among young drivers and social media influencers. The rise of Instagram culture and the desire for unique and eye-catching content have contributed to the appeal of pink cars as a statement piece.
+                
+                By driving a pink car, some individuals challenge gender stereotypes and assert their own sense of identity, embracing femininity in a traditionally male-dominated industry. However, the perception of pink cars can vary widely depending on cultural norms and personal preferences. The choice of a pink car is a personal one, reflecting the owner's unique taste and personality. In conclusion, pink cars occupy a special place in the world of automobiles, serving as a symbol of individuality, creativity, and self-expression.</p> 
+        </div> 
+    </section> 
+
+    <section id="2">
+        <h2 class="left">News</h2>
+    </section> 
+    <section class="news">
+      <article class="news-preview">
+          <img  src="car10.jpg" alt="News Thumbnail 1" class="news-thumbnail">
+          <h3>News 1</h3>
+          <p class="news-meta"> December 3, 2022 </p>
+          <p class="hide">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+          <a href="#" class="read-more">Read More</a>
+      </article>
+
+      <article class="news-preview">
+          <img src="car19.jpg" alt="News Thumbnail 2" class="news-thumbnail">
+          <h3>News 2</h3>
+          <p class="news-meta"> December 8, 2023 </p>
+          <p class="hide">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+          <a href="#" class="read-more">Read More</a>
+      </article>
+
+      <article class="news-preview">
+          <img src="car16.jpg" alt="News Thumbnail 3" class="news-thumbnail">
+          <h3>News 3</h3>
+          <p class="news-meta"> December 9, 2024 </p>
+          <p class="hide">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+          <a href="#" class="read-more">Read More</a>
+      </article>
+
+      <article class="news-preview">
+          <img src="car13.jpg" alt="News Thumbnail 4" class="news-thumbnail">
+          <h3>News 4</h3>
+          <p class="news-meta"> December 13, 2024 </p>
+          <p class="hide">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+          <a href="#" class="read-more">Read More</a>
+      </article>
+  </section>
+
+</body> 
+</html> 

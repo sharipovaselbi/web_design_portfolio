@@ -1,0 +1,154 @@
+﻿<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+
+        header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #38444d;
+        }
+
+        header li {
+            float: left;
+        }
+
+            header li a, header .dropbtn {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                header li a:hover, header .dropdown:hover .dropbtn {
+                    background-color: #4CAF50;
+                }
+
+            header li.dropdown {
+                display: inline-block;
+            }
+
+        header .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            header .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                header .dropdown-content a:hover {
+                    background-color: #f1f1f1;
+                }
+
+        header .dropdown:hover .dropdown-content {
+            display: block;
+        }
+		  img {
+            max-width: 400px;
+            float: right;
+            margin: 10px;
+        }
+    </style>
+    
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 5 - Holy Grail Layout</title>
+    
+      
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#box-model">Box Model in CSS</a></li>
+                <li><a href="#clearfix-hack">Clearfix Hack</a></li>
+                <li><a href="#margin-collapse">Margin Collapse</a></li>
+                <li><a href="#holy-grail-layout-problem">Holy Grail Layout Problem</a></li>
+				<li><a href="#modern-solutions">Modern Solutions</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="links">Links</a>
+                    <div class="dropdown-content">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Mozilla Developer Network (MDN)</a>
+                        <a href="https://tympanus.net/codrops/">Codrops</a>
+                        <a href="https://www.smashingmagazine.com"> Smashing Magazine</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="box-model">
+            <h2 style="clear:right">Box Model in CSS</h2>
+			<p>The box model in CSS explains how elements are displayed on a web page with content, padding, borders, and margins. The box-sizing property determines how an element's total width and height are calculated. The default value, content-box, only includes content size in calculations, while border-box includes padding and borders too. By setting box-sizing to border-box, you can simplify sizing by including padding and borders in the specified width and height, making it easier to create consistent layouts.</p>
+            <div class="clearfix">
+			 <img src="img1.jpg" alt="Box Model CSS">
+        </div>
+		</article>
+
+        <div class="clearfix">
+        <article id="clearfix-hack">
+            <h2 style="clear:right">Clearfix Hack</h2>
+            <p>A clearfix hack is a CSS technique used to prevent layout issues caused by floating elements. It ensures that the parent container of floated elements expands to contain its children by adding an additional element or pseudo-element with the clear: both property. This is particularly useful in multi-column layouts, grid systems, and responsive design. Methods to apply a clearfix hack include using an empty div, a pseudo-element, or a clearfix class.</p>
+            <div class="clearfix">
+            <img src="img2.png" alt="Clearfix Hack">
+        </div>
+	    </article>
+
+        <article id="margin-collapse">
+            <h2 style="clear:right">Margin Collapse</h2>
+            <p>Margin collapse in CSS occurs when adjacent elements' margins collapse into a single one, often due to overlap. The margin: auto property is used to center an element within its parent element, maintaining responsiveness in larger layouts. Negative margin values are used to create layout effects and positioning adjustments, such as overlapping elements, adjusting spacing, and creating visual effects. They can also counteract default margin or padding values, ensuring fine-tuning of element positioning. Understanding margin collapse and using margin: auto and negative margin values can lead to more flexible and visually appealing designs.</p>
+            <div class="clearfix">
+            <img src="img3.jpg" alt="Margin Collapse">
+        </div>
+		</article>
+
+        <article id="holy-grail-layout-problem">
+            <h2 style="clear:right">Holy Grail Layout Problem</h2>
+            <p>The Holy Grail layout is a classic web design pattern consisting of a header, footer, and three columns of content. It has faced challenges in creating a flexible and responsive design that adapts to different screen sizes and device types. Common problems include equal height columns, center column positioning, responsive design, floats and clearing, and browser compatibility. To overcome these challenges, web developers often use CSS techniques like flexbox, grid layout, clearfix hacks, negative margins, and media queries. With advancements in CSS and browser support, achieving the Holy Grail layout has become more manageable in contemporary web development.</p>
+            <div class="clearfix">
+		    <img src="img4.jpg" alt="Holy Grail Layout Problem">
+        </div>
+	    </article>
+
+        <article id ="modern-solutions">
+            <h2 style="clear:right">Modern Solutions</h2>
+            <p>Modern web development has made achieving the Holy Grail layout more accessible through CSS advancements and responsive design practices. Modern techniques include using flexbox, CSS Grid Layout, CSS frameworks like Bootstrap, Foundation, and Tailwind CSS, CSS custom properties (variables), media queries, and CSS-in-JS libraries. Flexbox allows for complex layouts with equal-height columns and easy alignment options. Grid layouts provide better control over column widths and alignment. CSS frameworks like Bootstrap, Foundation, and Tailwind CSS offer pre-built grid systems and layout components. Custom properties allow for reusable values for layout properties, optimizing layout dimensions and spacing across breakpoints. Media queries optimize layouts for different viewport sizes and CSS-in-JS libraries allow for dynamic styling.</p>
+            <div class="clearfix">
+			<img src="img5.jpg" alt="Modern Solutions">
+        </div>
+	    </article>
+    </main>
+
+    <footer>
+        <p>Student: [Selbi]</p>
+        <p>Course: [Web Design]</p>
+        <p>Date: [22.04.2024]</p>
+        <p>Day: [Monday]</p>
+        <p>Place: [University]</p>
+
+        <!-- List of interesting links -->
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">https://developer.mozilla.org/en-US/docs/Web/CSS</a></li>
+            <li><a href="https://tympanus.net/codrops/">https://tympanus.net/codrops/</a></li>
+            <li><a href="https://www.smashingmagazine.com">https://www.smashingmagazine.com/</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
